@@ -1,5 +1,5 @@
 # Showing my HTML,CSS and React basic skills (Website is not responsive, working on it)
-
+when cloning the repository, first run "npm install" and then "npm start"
 
 # Getting Started with Create React App
 
