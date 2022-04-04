@@ -35,6 +35,7 @@ function Header({faq,contact}) {
     },[])
 
 
+    //Use on navbar to scroll to ref.(Home,Faq,Contact)
     const home = useRef(null);
     const scrollEffect = ( targetRef ) =>{
         targetRef.current.scrollIntoView({
