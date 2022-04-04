@@ -1,0 +1,54 @@
+footer {
+    width: 100%;
+    padding: 50px 550px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: black;
+}
+
+.text--Container {
+    height: 100%;
+    font-size: 40px;
+    padding: 6px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.text--Container::after {
+    content: "";
+    height: 3px;
+    width: 100%;
+    background-color: #d4e632;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+}
+
+.text--Container h1 {
+    color: whitesmoke;
+    font-size: 60px;
+}
+
+.text--Container span {
+    color: #d4e632;
+}
+
+.text--Container p {
+    margin-top: 6px;
+    color: whitesmoke;
+    font-size: 30px;
+}
+
+.rights--Container{
+    margin-top: 40px;
+    color: whitesmoke;
+}
+
+
+
