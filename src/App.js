@@ -6,13 +6,14 @@ import React, { useRef } from 'react'
 
 function App() {
 
+  const detailsRef = useRef(null);
   const faqRef = useRef(null);
   const contactRef = useRef(null);
 
   return (
     <div className="App">
-      <Header faq = {faqRef} contact = {contactRef}/>
-      <Content faq = {faqRef} contact = {contactRef}/>
+      <Header details = {detailsRef} faq = {faqRef} contact = {contactRef}/>
+      <Content details = {detailsRef} faq = {faqRef} contact = {contactRef}/>
       <Footer/>
     </div>
   );

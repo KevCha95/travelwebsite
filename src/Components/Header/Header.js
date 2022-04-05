@@ -3,7 +3,7 @@ import React, {useState,useEffect, useRef} from 'react';
 import './HeaderStyle.css';
 
 
-function Header({faq,contact}) {
+function Header({details,faq,contact}) {
 
     //Change navbar when scrolling.
     //Change a links of the navbar when scrolling
@@ -31,7 +31,6 @@ function Header({faq,contact}) {
 
     useEffect(() => {
         window.addEventListener('scroll', changeNavbar);
-        console.log(home.current)
     },[])
 
 
@@ -49,7 +48,7 @@ function Header({faq,contact}) {
         <div className={navbar ? 'nav--Holder' : ''}>
             <nav className={navbar ? 'nav--Container active' : 'nav--Container'}>
                 <p className="nav--Logo" onClick = { () =>scrollEffect(home)}>
-                    <h1>Tico<span> Travel</span></h1>
+                    <h1>Tica<span> Travel</span></h1>
                 </p>
                 <ul>
                     <li className={active[0] ? 'active' : ''} onClick = { () =>scrollEffect(home) }><p>Home</p></li>
@@ -61,7 +60,7 @@ function Header({faq,contact}) {
         <div className="nav--Text">
             <h1>Costa Rica traveling experience</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisi nullam vehicula ipsum a arcu cursus vitae. Egestas sed sed risus pretium quam vulputate dignissim suspendisse. Mi proin sed libero enim. Maecenas pharetra convallis posuere morbi leo urna.</p>
-            <button type="button"><span></span>Details</button>
+            <button type="button" onClick = { () =>scrollEffect(details)}><span></span>Details</button>
         </div>
     </section>
   )

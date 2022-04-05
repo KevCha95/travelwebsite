@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer>
         <div className="text--Container">
-            <h1>Tico <span>Travel</span></h1>
+            <h1>Tica <span>Travel</span></h1>
             <p>Costa rica traveling experience</p>
         </div>
         <div className="rights--Container">

@@ -7,7 +7,7 @@ import { useForm } from "react-hook-form";
 import swal from 'sweetalert';
 
 
-function Content({home,faq,contact}) {
+function Content({details,faq,contact}) {
 
     //Get data from API to create the cards on "What can you do"
     const [cards, setCards] = useState([]);
@@ -57,7 +57,7 @@ function Content({home,faq,contact}) {
 
   return (
     <section>
-        <div className="services--Container" ref={home}>
+        <div className="services--Container" ref={details}>
             <h1>What can <span>you do</span></h1>
             <div className="cards--Container">
                 {
